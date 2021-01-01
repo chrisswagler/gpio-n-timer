@@ -6,14 +6,6 @@
 int main() {
 	//declare object for GPIOControl class
 	GPIOControl gpio;
-	/* Part A
-	while (1) {
-		//set the LED to the status of the button in the infinite loop
-		gpio.LEDOnOff(gpio.ButtonRead());
-	}
-	*/
-
-	// Part B
 	//while the button is not pressed
 	while (gpio.ButtonRead() != 1) {
 		//setup the timer to be 2 seconds
